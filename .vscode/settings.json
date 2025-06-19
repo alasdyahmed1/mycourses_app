@@ -1,0 +1,96 @@
+{
+  // ===== إعدادات الواجهة الأساسية =====
+  "window.zoomLevel": 0,
+  "workbench.tree.indent": 16,
+  "workbench.list.horizontalScrolling": true,
+  // "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.colorTheme": "Default Dark+",
+  
+  // ===== إعدادات الخطوط =====
+  "editor.fontFamily": "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.2,
+  "editor.letterSpacing": 0.3,
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontSize": 12,
+  "debug.console.fontSize": 12,
+  "editor.suggestFontSize": 12,
+  "editor.suggestLineHeight": 18,
+  
+  // ===== إعدادات المحرر =====
+  "editor.cursorWidth": 2,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.renderWhitespace": "selection",
+  "editor.renderLineHighlight": "all",
+  "editor.minimap.enabled": true,
+  "editor.minimap.scale": 1,
+  "editor.minimap.showSlider": "always",
+  "editor.padding.top": 8,
+  "editor.padding.bottom": 8,
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.scrollbar.horizontalScrollbarSize": 10,
+  
+  // ===== إعدادات خاصة بلغة Dart =====
+  "[dart]": {
+    "editor.fontSize": 13,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.rulers": [80, 120],
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "on"
+  },
+  
+  // ===== إعدادات خاصة بلغة JSON =====
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  
+  // ===== إعدادات Flutter =====
+  "dart.openDevTools": "flutter",
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.previewHotReloadOnSaveWatcher": true,
+  "dart.showDartDeveloperLog": false,
+  "dart.renameFilesWithClasses": "always",
+  "dart.sdkPath": "C:\\flutter\\bin\\cache\\dart-sdk",
+  "dart.flutterSdkPath": "C:\\flutter",
+  
+  // ===== إعدادات إضافية =====
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/build": true,
+    "**/.dart_tool": true,
+    "**/.pub-cache": true,
+    "**/.pub": true
+  },
+  "search.exclude": {
+    "**/build/": true,
+    "**/.dart_tool/": true,
+    "**/.pub-cache/": true,
+    "**/.pub/": true,
+    "**/.flutter-plugins": true,
+    "**/.flutter-plugins-dependencies": true
+  },
+  
+  // ===== إعدادات CMake =====
+  "cmake.sourceDirectory": "C:/Users/Ahmed-IT/Documents/GitHub/course/linux",
+  "java.project.explorer.showNonJavaResources": true,
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تم تسجيل الدخول بنجاح - كورساتي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Success page specific styles */
+        body {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .success-container {
+            background: var(--surface);
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 100%;
+            animation: slideUp 0.6s ease-out;
+            color: var(--text-primary);
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            animation: bounce 0.8s ease-out 0.3s both;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .checkmark {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        
+        .success-container h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        
+        .instruction {
+            background: var(--surface-light);
+            border: 2px dashed var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .app-info {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        
+        .app-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .app-description {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .close-button {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .close-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(33, 150, 243, 0.4);
+        }
+        
+        .links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .links a {
+            color: var(--primary-light);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+        
+        .links a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 480px) {
+            .success-container {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+            
+            .success-container h1 {
+                font-size: 24px;
+            }
+            
+            .subtitle {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <div class="success-container">
+        <div class="success-icon">
+            <div class="checkmark">✓</div>
+        </div>
+        
+        <h1>تم تسجيل الدخول بنجاح!</h1>
+        <p class="subtitle">مرحباً بك في تطبيق كورساتي</p>
+        
+        <div class="app-info">
+            <div class="app-name">كورساتي</div>
+            <div class="app-description">منصة التعلم الإلكتروني للطلاب</div>
+        </div>
+        
+        <div class="instruction">
+            <strong>يمكنك الآن إغلاق هذه الصفحة والعودة للتطبيق</strong><br>
+            تم ربط حسابك بنجاح وأصبح بإمكانك الاستفادة من جميع المميزات
+        </div>
+<!--         
+        <button class="close-button" onclick="closeWindow()">
+            إغلاق الصفحة
+        </button> -->
+        
+        <div class="links">
+            <a href="privacy.html">سياسة الخصوصية</a>
+            <a href="terms.html">شروط الاستخدام</a>
+            <a href="mailto:alasdyahmed1@gmail.com">تواصل معنا</a>
+        </div>
+    </div>
+
+    <script>
+        // محاولة إغلاق النافذة تلقائياً بعد 3 ثواني
+        setTimeout(() => {
+            if (window.opener) {
+                window.close();
+            }
+        }, 3000);
+        
+        function closeWindow() {
+            try {
+                // محاولة إغلاق النافذة
+                window.close();
+            } catch (e) {
+                // في حالة فشل الإغلاق التلقائي
+                console.error('فشل إغلاق النافذة:', e);
+                // توجيه المستخدم للصفحة الرئيسية كبديل
+                window.location.href = 'index.html';
+            }
+        }
+        
+        // إضافة تأثير ترحيبي
+        document.addEventListener('DOMContentLoaded', function() {
+            // تأثير الكونفيتي (اختياري)
+            const colors = ['#667eea', '#764ba2', '#4CAF50', '#FFC107', '#FF5722'];
+            
+            function createConfetti() {
+                const confetti = document.createElement('div');
+                confetti.style.position = 'fixed';
+                confetti.style.width = '10px';
+                confetti.style.height = '10px';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.top = '-10px';
+                confetti.style.zIndex = '1000';
+                confetti.style.borderRadius = '50%';
+                confetti.style.pointerEvents = 'none';
+                
+                document.body.appendChild(confetti);
+                
+                let pos = 0;
+                const fall = setInterval(() => {
+                    pos += 5;
+                    confetti.style.top = pos + 'px';
+                    
+                    if (pos > window.innerHeight) {
+                        clearInterval(fall);
+                        confetti.remove();
+                    }
+                }, 50);
+            }
+            
+            // إنشاء 20 قطعة كونفيتي
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => createConfetti(), i * 100);
+            }
+        });
+    </script>
+    
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+</body>
+</html>
