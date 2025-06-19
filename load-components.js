@@ -12,7 +12,7 @@ function loadComponent(id, file) {
             return;
         }
         
-        fetch(`/_includes/${file}.html`)
+        fetch(`${file}.html`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`فشل تحميل ${file}: ${response.status} ${response.statusText}`);
